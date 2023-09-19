@@ -16,37 +16,25 @@
 // Simple math equations (addition, subtraction, multiplication and division).
 
 
-int factorial_function(int factorial_input) {
-	std::cin >> factorial_input;
-
-	if (factorial_input < 1) {
-		return 1;
-	}
-	else { return factorial_input * factorial_function(factorial_input - 1); }
-}
 int main() {
 	int menu_input;
-	
+	int factorial_input;
+	//int end_result;
 
-
-	int polynomial_function()
-	{
-		
-	}
-	int normal_calculation()
-	{
-
-	}
-
-	std::cout << "Input the corresponding number to what you want to do \n"
-		<< "\n[1] Factorial Calculator\n"
+	std::cout << "Input the corresponding number to what you want to do \n\n"
+		<< "[1] Factorial Calculator\n"
 		<< "[2] 3rd degree polynomial Calcutor\n"
 		<< "[3] Addition, Subtraction, Multiplication or Division\n"
 		<< "[4] BIG RED BUTTON (don't press it)\n\n";
 	std::cin >> menu_input;
 
 	if (menu_input == 1) {
-		factorial_function();
+		
+		std::cout << "write a number and I will calculate the factorial :)\n";
+		std::cin >> factorial_input;
+
+		std::cout << factorial_function(factorial_input);;
+		return 0;
 	}
 	else if (menu_input == 2) {
 		polynomial_function();
