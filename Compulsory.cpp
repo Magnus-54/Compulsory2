@@ -19,8 +19,6 @@
 int main() {
 	int menu_input;
 	int factorial_input;
-	//int end_result;
-
 	std::cout << "Input the corresponding number to what you want to do \n\n"
 		<< "[1] Factorial Calculator\n"
 		<< "[2] 3rd degree polynomial Calcutor\n"
