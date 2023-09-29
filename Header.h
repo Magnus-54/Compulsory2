@@ -20,7 +20,7 @@ int factorial_function(int factorial_input) {
 	return end_result;
 	}
 }
-//Function for polynomial calculations
+//Function for polynomial calculations NOT FINISHED
 int polynomial_function()
 {
 	return 0;
