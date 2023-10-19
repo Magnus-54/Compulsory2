@@ -1,17 +1,8 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <cmath>
 #include "Header.h"
-
-
-
-// long unsigned int
-// 
-// Factorial (use recursion)
-// Solving 3rd degree polynomial equations (addition, subtraction, multiplication)
-// Simple math equations (addition, subtraction, multiplication and division).
-// 
-
 
 int main() {
 	//defining variables used in main
@@ -20,7 +11,7 @@ int main() {
 	int menu_input;
 	int factorial_input;
 
-	
+	 
 
 	//loop for menu to continue after a calulation is finished
 	while (run) {
@@ -40,7 +31,22 @@ int main() {
 		}
 		//Polynomial option, uses polynomial_function from header
 		else if (menu_input == 2) {
-			polynomial_function();
+			int a, b, c, d, x;
+
+			std::cout << "Input what numbers you want to use\n";
+			std::cout << "\na=";
+			std::cin >> a;
+			std::cout << "\nb=";
+			std::cin >> b;
+			std::cout << "\nc=";
+			std::cin >> c;
+			std::cout << "\nd=";
+			std::cin >> d;
+			std::cout << "\nx=";
+			std::cin >> x;
+
+
+			std::cout<<polynomial_function(a,b,c,d,x);
 		}
 		//sub-menu for regular calculations
 		//runs the appropriate function for the task

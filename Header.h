@@ -3,9 +3,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-
-//Function for first option; factorial calculation
-
+#include <cmath>
 
 int a;
 int b;
@@ -20,10 +18,11 @@ int factorial_function(int factorial_input) {
 	return end_result;
 	}
 }
-//Function for polynomial calculations NOT FINISHED
-int polynomial_function()
+double polynomial_function(int a, int b, int c, int d, int x)
 {
-	return 0;
+	double end_result = (a * pow(x, 3)) + (b * pow(x, 2)) + (c * x) + d;
+
+	return end_result;
 }
 int addition(){
 	std::cin >> a
@@ -39,6 +38,7 @@ int subtraction() {
 
 	return end_result;
 }
+
 int multiplication() {
 	std::cin >> a
 		>> b;
